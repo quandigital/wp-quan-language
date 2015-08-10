@@ -1,0 +1,9 @@
+{
+    "name": "quandigital/language-tax",
+    "description": "Adds a language taxonomy",
+    "license": "MIT",
+    "type": "wordpress-plugin",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}
