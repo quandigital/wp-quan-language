@@ -3,7 +3,7 @@
  * Plugin Name: Quan Language Taxonomy
  * Plugin URI: http://www.quandigital.com/
  * Description: Adds a language taxonomy to posts
- * Version: 1.0.0
+ * Version: 1.0.1
  * License: MIT
  */
 
