@@ -40,15 +40,16 @@ function custom_taxonomy()  {
 }
 
 // Hook into the 'init' action
-add_action( 'init', 'custom_taxonomy', 0 );
+add_action( 'init', 'custom_taxonomy');
 
 
 // remove the add new language button from the backend
 function quan_remove_add_new( $hook ) {
-	if( $hook != 'post.php' && $hook != 'post-new.php' )
+	if( $hook != 'post.php' && $hook != 'post-new.php' ) {
 		return;
+	}
 	
-	wp_enqueue_script( 'quan_jobs', plugin_dir_url( __FILE__ ) .  'quanlang.js', array( 'jquery' ), '1.0.0', true );
+	wp_enqueue_script( 'quan_lang', plugin_dir_url( __FILE__ ) .  'quan-lang.js', array( 'jquery' ), '1.0.0', true );
 }
 
 add_action( 'admin_enqueue_scripts', 'quan_remove_add_new' );
